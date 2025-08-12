@@ -3,20 +3,28 @@
   "id": "quicktimer",
   "version": "${version}",
   "name": "QuickTimer",
-  "description": "",
+  "description": "Simple Timer in Actionbar!",
   "authors": ["beqare"],
-  "contact": {},
-  "license": "All-Rights-Reserved",
+  "license": "MIT",
   "icon": "assets/logo.png",
-  "website": "https://jonasgrimm.de",
-  "issues": "https://github.com/beqare/quicktimer/issues",
+  "contact": {
+    "homepage": "https://jonasgrimm.de",
+    "sources": "https://github.com/beqare/QuickTimer",
+    "issues": "https://github.com/beqare/QuickTimer/issues"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.com/invite/v928kvwu7M"
+      }
+    }
+  },
   "environment": "client",
   "entrypoints": {
     "client": [
       "de.beqare.quicktimer.client.Quicktimer"
     ]
   },
-
 
   "mixins": [
     "quicktimer.mixins.json",
