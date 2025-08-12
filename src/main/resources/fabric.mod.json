@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "quicktimer",
+  "version": "${version}",
+  "name": "QuickTimer",
+  "description": "",
+  "authors": ["beqare"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/logo.png",
+  "website": "https://jonasgrimm.de",
+  "issues": "https://github.com/beqare/quicktimer/issues",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.beqare.quicktimer.client.Quicktimer"
+    ]
+  },
+
+
+  "mixins": [
+    "quicktimer.mixins.json",
+    {
+      "config": "quicktimer.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
